@@ -1,11 +1,12 @@
-from fastapi
-import FastAPI
+from fastapi import FastAPI
 
 app = FastAPI(
-    title="Chai Point menu API",
-    description="Read only menu API for kisko displays and mobile apps",
+    title="pincode lookup API",
+    description="Auto fill city and state from india pincode during checkout ",
 )
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to Chai Point menu API!"}
+    return {"message": "Welcome to the pincode lookup API!"}
+
+
