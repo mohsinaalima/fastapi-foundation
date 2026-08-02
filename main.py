@@ -1,11 +1,11 @@
-from fastapi import FastAPI
-import uvicorn
-app = FastAPI()
+from fastapi
+import FastAPI
+
+app = FastAPI(
+    title="Chai Point menu API",
+    description="Read only menu API for kisko displays and mobile apps",
+)
 
 @app.get("/")
-def read_root():    
-    return {"Hello": "World", "message": "Welcome to FastAPI!"}
-
-
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.10", port=8000, reload=True)
+def root():
+    return {"message": "Welcome to Chai Point menu API!"}
